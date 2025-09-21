@@ -1,0 +1,253 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #0d0d0f;
+        color: #ccc;
+}
+
+/* Card layout for all main content */
+.card {
+        background: #1c1b2e;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
+        padding: 2rem;
+        margin: 2rem auto;
+        width: 90%;
+        max-width: 1200px;
+}
+
+/* Navbar */
+header.navbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: #1c1b2e;
+        margin: 0 auto 2rem;
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+}
+
+.navbar-list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 40px;
+}
+
+.navbar-link {
+        color: #ffffff;
+        font-family: cursive;
+        font-size: 17px;
+        font-weight: 600;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 8px;
+        background: transparent;
+        cursor: pointer;
+        transition: color 0.5s ease, background 0.3s;
+}
+
+.navbar-link:hover {
+        background: rgba(164, 139, 254, 0.15);
+        color: #fff;
+}
+
+.navbar-link.active {
+        color: rgb(255, 179, 0);
+        text-shadow: #2f2f2f 0px 0px 4px;
+}
+
+/* Sections */
+main {
+        padding-bottom: 2rem;
+}
+
+section {
+        display: none;
+        text-align: center;
+}
+
+section.active {
+        display: block;
+}
+
+/* Intro */
+h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #fff;
+}
+
+h1 span {
+        color: #a48bfe;
+}
+
+h2 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        font-weight: bold;
+        color: #fff;
+}
+
+p {
+        max-width: 600px;
+        margin: 0.5rem auto;
+        color: #aaa;
+}
+
+/* Button */
+.btn {
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 0.7rem 1.5rem;
+        border: 1px solid #a48bfe;
+        background: #a48bfe;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+}
+
+.btn:hover {
+        background: #ffffff;
+        color: #000000;
+}
+
+/* About section card layout */
+.card-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+}
+
+.inner-card {
+        background: #24223b;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        flex: 1 1 250px;
+        max-width: 300px;
+        transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.inner-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.inner-card h3 {
+        color: #a48bfe;
+        margin-bottom: 1rem;
+}
+
+.inner-card p {
+        text-align: left;
+        color: #aaa;
+        margin-bottom: 0.5rem;
+}
+
+/* Project */
+.project-container {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto 3rem;
+}
+
+.project-video video {
+        width: 500px;
+        max-width: 90vw;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.project-slideshow {
+        position: relative;
+        width: 500px;
+        max-width: 90vw;
+}
+
+.project-slideshow .slides img {
+        width: 100%;
+        display: none;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.project-slideshow .slides img.active {
+        display: block;
+}
+
+.project-slideshow button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(164, 139, 254, 0.8);
+        border: none;
+        color: white;
+        padding: 0.8rem 1.2rem;
+        cursor: pointer;
+        border-radius: 6px;
+        font-size: 1.2rem;
+}
+
+.project-slideshow .prev {
+        left: 12px;
+}
+
+.project-slideshow .next {
+        right: 12px;
+}
+
+.project-slideshow button:hover {
+        background: rgba(164, 139, 254, 1);
+}
+
+.project-title {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem 0;
+        color: #a48bfe;
+}
+
+.project-subtitle {
+        display: inline-block;
+        padding: 0 1rem;
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem auto;
+        color: #fff;
+        border-top: 5px solid rgb(255, 179, 0);
+}
+
+/* Contact Info */
+.contact {
+        margin: 3rem auto 0;
+        text-align: center;
+        max-width: 600px;
+        border-top: 1px solid #333;
+        padding-top: 1rem;
+        color: #aaa;
+}
+
+.contact h3 {
+        color: #a48bfe;
+        margin-bottom: 0.5rem;
+}
+
+.contact p {
+        margin: 0.2rem 0;
+}

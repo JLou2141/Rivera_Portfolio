@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar card">
+    <nav>
+      <ul class="navbar-list">
+        <li><button class="navbar-link active" data-nav-link="introduction">Introduction</button></li>
+        <li><button class="navbar-link" data-nav-link="about">About Me</button></li>
+        <li><button class="navbar-link" data-nav-link="projects">Projects</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INTRO -->
+    <section id="introduction" class="card active">
+      <h1>Hi, I am <span>James Luigi Rivera</span>.</h1>
+      <h2>An IT Student & Aspiring Developer.</h2>
+      <p>
+        A second-year Information Technology student at Ateneo de Zamboanga University.
+        Passionate about web development, programming, and continuously improving my skills in C++, PHP, and MySQL.
+        I enjoy building projects that solve problems and showcase creativity.
+      </p>
+
+      <button class="btn" data-nav-link="about"><b>Resume</b></button>
+
+      <div class="contact">
+        <h3>Contact</h3>
+        <p>Email: jamesluigirivera@example.com</p>
+        <p>Phone: +63 912 345 6789</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card">
+      <div class="card-container">
+        <!-- Skills -->
+        <div class="card inner-card">
+          <h3>Skills</h3>
+          <p>• <strong>Web Development:</strong> HTML, CSS, PHP, MySQL</p>
+          <p>• <strong>Programming:</strong> C++ (Basic), Object-Oriented Concepts</p>
+          <p>• <strong>Database Management:</strong> Basic MySQL Queries</p>
+          <p>• <strong>Software Tools:</strong> Visual Studio Code, MS Office Suite, Google Workspace</p>
+          <p>• <strong>Other Skills:</strong> Basic Video Editing</p>
+        </div>
+
+        <!-- Experience -->
+        <div class="card inner-card">
+          <h3>Experience</h3>
+          <p><strong>Academic Projects:</strong> Built a responsive portfolio website and a simulated Gmail-like
+            dashboard with PHP & MySQL.</p>
+          <p><strong>Programming Practice:</strong> Created C++ text-based adventure games applying OOP and survival
+            mechanics.</p>
+          <p><strong>Practical Experience:</strong> Applied IT and communication skills through part-time job
+            applications and collaborative coursework.</p>
+        </div>
+
+        <!-- Education -->
+        <div class="card inner-card">
+          <h3>Education</h3>
+          <p><strong>Ateneo de Zamboanga University:</strong> BS in Information Technology (Ongoing)</p>
+          <p><strong>Relevant Coursework:</strong> Web Development, Database Management, Object-Oriented Programming,
+            HCI</p>
+          <p><strong>Certifications/Skills:</strong> Basic MySQL, PHP, C++, MS Office, Google Workspace</p>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h3>Contact</h3>
+        <p>Email: jamesluigirivera@example.com</p>
+        <p>Phone: +63 912 345 6789</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card">
+      <h2 class="project-title">Featured Projects</h2>
+
+      <!-- Project 1 -->
+      <div class="project-container">
+        <div class="project-video">
+          <video controls autoplay muted loop>
+            <source src="Web_Vid.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="project-slideshow">
+          <div class="slides">
+            <img src="Web_Pic (1).png" class="active" alt="Purtier Website Image 1">
+            <img src="Web_Pic (2).png" alt="Purtier Website Image 2">
+            <img src="Web_Pic (3).png" alt="Purtier Website Image 3">
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </div>
+      <h3 class="project-subtitle">Purtier Website</h3>
+
+      <!-- Project 2 -->
+      <div class="project-container">
+        <div class="project-video">
+          <video controls autoplay muted loop>
+            <source src="StudRec_Vid.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="project-slideshow">
+          <div class="slides">
+            <img src="StudRec_Pic (1).png" class="active" alt="Student Record C++ Image 1">
+            <img src="StudRec_Pic (2).png" alt="Student Record C++ Image 2">
+            <img src="StudRec_Pic (3).png" alt="Student Record C++ Image 3">
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </div>
+      <h3 class="project-subtitle">Student Record (C++)</h3>
+
+      <!-- Project 3 -->
+      <div class="project-container">
+        <div class="project-video">
+          <video controls autoplay muted loop>
+            <source src="Game_Vid.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="project-slideshow">
+          <div class="slides">
+            <img src="Game_Pic (1).png" class="active" alt="Short Story Game C++ Image 1">
+            <img src="Game_Pic (2).png" alt="Short Story Game C++ Image 2">
+            <img src="Game_Pic (3).png" alt="Short Story Game C++ Image 3">
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </div>
+      <h3 class="project-subtitle">Short Story Game (C++)</h3>
+
+      <div class="contact">
+        <h3>Contact</h3>
+        <p>Email: jamesluigirivera@example.com</p>
+        <p>Phone: +63 912 345 6789</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
