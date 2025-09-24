@@ -62,21 +62,80 @@ header.navbar {
         text-shadow: #2f2f2f 0px 0px 4px;
 }
 
-/* Sections */
+/* Main */
 main {
         padding-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        height: 80vh;
+        gap: 2rem;
+        margin: auto;
+        max-width: 1200px;
+}       
+/* contact card */
+.contact.card {
+        margin-top: 35px;
+        padding: 1rem 2rem;
+        width: 300px;
+        height: 100%;
+        flex-shrink: 0;
+        overflow-y: auto;
+        border-top: 1px solid #333;
+        color: #aaa;
 }
 
+.profile-pic {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        border: 3px solid #a48bfe;
+        transform: rotate(-3deg) translate(-5px);
+}
+
+.social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+}
+
+.social-icon {
+        font-size: 22px;
+        color: #ccc;
+        /* default gray */
+        transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+        color: #fff;
+        /* turns white on hover */
+}
+/* Sections */
+
 section {
+        flex: 1;
+        height: 100%;
         display: none;
         text-align: center;
+        overflow-y: auto;
+        scroll-behavior: smooth;
 }
 
 section.active {
         display: block;
 }
 
+#projects {
+        overflow-y: auto;
+}
 /* Intro */
+.intro {
+        padding-top: 200px;
+}
 h1 {
         font-size: 3rem;
         font-weight: bold;
